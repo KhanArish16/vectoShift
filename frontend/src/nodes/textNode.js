@@ -26,7 +26,7 @@ export const TextNode = ({ id, data = {}, onChange }) => {
       type: "textarea",
       placeholder: "Enter text with variables like {{context}}",
       default: data.text || "",
-      autoResize: true, // If BaseNode supports this
+      autoResize: true,
     },
   ];
 

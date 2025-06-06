@@ -53,15 +53,12 @@ export const BaseNode = ({
       style={nodeStyle}
       className={`px-5 py-4 w-80 border-2 rounded-lg shadow-lg bg-white flex flex-col gap-2 ${className}`}
     >
-      {/* Node Title */}
       <div>
         <span className="text-lg">{label}</span>
       </div>
 
-      {/* Custom Content */}
       {children && <div>{children}</div>}
 
-      {/* Form Fields */}
       <div className="flex flex-col gap-4  ">
         {customFields?.map((field, index) => (
           <FieldRenderer
@@ -75,7 +72,6 @@ export const BaseNode = ({
         ))}
       </div>
 
-      {/* Input Handles */}
       {inputHandles?.map((handle, index) => (
         <Handle
           key={`${id}-input-${index}`}
@@ -87,7 +83,6 @@ export const BaseNode = ({
         />
       ))}
 
-      {/* Output Handles */}
       {outputHandles?.map((handle, index) => (
         <Handle
           key={`${id}-output-${index}`}

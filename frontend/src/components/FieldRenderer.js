@@ -7,7 +7,6 @@ const FieldRenderer = ({ field, value, onChange, label, className = "" }) => {
     onChange(field.name, e.target.value);
   };
 
-  // Select Field
   if (field.type === "select") {
     return (
       <div className={className}>
@@ -32,7 +31,6 @@ const FieldRenderer = ({ field, value, onChange, label, className = "" }) => {
     );
   }
 
-  // Checkbox Field
   if (field.type === "checkbox") {
     return (
       <div className={className}>
@@ -46,7 +44,6 @@ const FieldRenderer = ({ field, value, onChange, label, className = "" }) => {
     );
   }
 
-  // Number Field
   if (field.type === "number") {
     return (
       <div className={className}>
@@ -66,7 +63,6 @@ const FieldRenderer = ({ field, value, onChange, label, className = "" }) => {
     );
   }
 
-  // Textarea Field
   if (field.type === "textarea") {
     return (
       <div>
@@ -85,7 +81,6 @@ const FieldRenderer = ({ field, value, onChange, label, className = "" }) => {
     );
   }
 
-  // Default Text Input
   return (
     <div className={className}>
       <Input

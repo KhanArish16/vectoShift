@@ -1,4 +1,4 @@
-import { Bounce, Slide, toast, ToastContainer } from "react-toastify";
+import { Bounce, toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useStore } from "./store";
 import { shallow } from "zustand/shallow";
